@@ -1,0 +1,17 @@
+﻿<dx:DXWindow x:Class="Yahtzee.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+        xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
+        WindowStartupLocation="CenterScreen"
+        Title="Yahtzee" Height="283.898" Width="300"
+        Background="Crimson"
+        Icon="Images/YahtzeeIcon.ico">
+    <Grid Margin="10,10,10,10">
+        <Image HorizontalAlignment="Center" Margin="35,10,37,162" Width="200" Source="Images/Yahtzee_kindle-logo.png"/>
+        <StackPanel HorizontalAlignment="Center" Height="101" VerticalAlignment="Top" Width="200" Margin="35,102,37,0">
+            <Button x:Name="Rules" Content="Rules" Width="200" Height="30" Margin="0,0,0,20" Click="Rules_Click"/>
+            <Button x:Name="OnePlayer" Content="Play" Width="200" Height="30" Margin="0,0,0,20" Click="One_Player_Click"/>
+        </StackPanel>
+    </Grid>
+</dx:DXWindow>

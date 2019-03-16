@@ -1,0 +1,48 @@
+﻿<dx:DXWindow
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+    xmlns:dxp="http://schemas.devexpress.com/winfx/2008/xaml/printing"
+    x:Class="Yahtzee.Rules"
+    dx:ThemeManager.ThemeName="LightGray"
+    Title="Rules" Height="350" Width="610"
+    Background="Crimson" WindowStyle="ThreeDBorderWindow">
+
+    <Grid Margin="10,10,10,10">
+        <Border BorderBrush="White" BorderThickness="3" CornerRadius="3" Margin="0,0,0,0" Padding="0,0,0,0">
+            <ScrollViewer HorizontalAlignment="Left" VerticalAlignment="Top" Height="Auto" Margin="0" Width="Auto" Foreground="White">
+                <TextBlock Foreground="White" TextWrapping="Wrap" xml:space="preserve" Margin="5">
+The objective of YAHTZEE is to get as many points as possible by rolling five dice and getting certain combinations of dice.
+
+Gameplay:
+In each turn, a player may throw the dice up to three times. A player doesn't have to roll all five dice on the second and third throw of a round, he may put as many dice as he wants to the side and only throw the ones that don't have the numbers he's trying to get. For example, a player throws and gets 1,3,3,4,6. He decides he want to try for the large straight, 1,2,3,4,5. So, he puts 1,3,4 to the side and only throws 3 and 6 again, hoping to get 2 and 5.
+In this game, you click on the dice you want to keep. They will be moved down and will not be thrown the next time you press the 'Roll Dice' button. If you decide after the second throw in a turn that you don't want to keep the same dice before the third throw then you can click them again and they will move back to the table and be thrown in the third throw.
+
+Upper section combinations:
+	Ones: Get as many ones as possible. Points are the sum of all ones.
+	Twos: Get as many twos as possible.Points are the sum of all twos.
+	Threes: Get as many threes as possible. Points are the sum of all threes.
+	Fours: Get as many fours as possible. Points are the sum of all fours.
+	Fives: Get as many fives as possible. Points are the sum of all fives.
+	Sixes: Get as many sixes as possible. Points are the sum of all sixes.
+
+For the six combinations above the score for each of them is the sum of dice of the right kind. E.g. if you get 1,3,3,3,5 and you choose Threes you will get 3*3 = 9 points. The sum of all the above combinations is calculated and if it is 63 or more, the player will get a bonus of 35 points. On average a player needs three of each to reach 63, but it is not required to get three of each exactly, it is perfectly OK to have five sixes, and zero ones for example, if the sum is 63 or more the bonus will be awarded.
+
+Lower section combinations:
+	Three of a kind: Get three dice with the same number. Points are the sum of all dice.
+	Four of a kind: Get four dice with the same number. Points are the sum of all dice.
+	Full house: Get three of a kind and a pair, e.g. 1,1,3,3,3 or 3,3,3,6,6. Scores 25 points.
+	Small straight: Get four sequential dice, 1,2,3,4 or 2,3,4,5 or 3,4,5,6. Scores 30 points.
+	Large straight: Get five sequential dice, 1,2,3,4,5 or 2,3,4,5,6. Scores 40 points.
+	Chance: Put anything into chance; it's like a garbage can for bad dice. Points are sum of all dice.
+	YAHTZEE: Five of a kind. Scores 50 points.
+
+
+
+                </TextBlock>
+            </ScrollViewer>
+        </Border>
+
+
+    </Grid>
+</dx:DXWindow>
